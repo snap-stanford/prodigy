@@ -17,9 +17,9 @@ pip install -r requirements.txt
 pip install pyg_lib torch_scatter torch_sparse torch_cluster -f https://data.pyg.org/whl/torch-2.0.1+cu117.html
 ```
 
-MAG and arXiv datasets will be automatically downloaded and processed to <DATA_ROOT>. In case of memory issue when generating adjacency matrix, we also provide the preprocessed MAG [adjacency matrix](http://snap.stanford.edu/prodigy/mag240m_adj_bi.pt) that should be put under <DATA_ROOT>/mag240m after the ogb download.
+All datasets should be prepared to individual folders under <DATA_ROOT>. For MAG and arXiv, the datasets will be automatically downloaded and processed to <DATA_ROOT>. In case of memory issue when generating adjacency matrix, we also provide the preprocessed MAG [adjacency matrix](http://snap.stanford.edu/prodigy/mag240m_adj_bi.pt) that should be put under <DATA_ROOT>/mag240m after the ogb download.
 
-Download preprocessed [Wiki](http://snap.stanford.edu/prodigy/Wiki.zip) and [FB15K-237](http://snap.stanford.edu/prodigy/FB15K-237.zip) datasets. Download other KG datasets (NELL and ConceptNet) following https://github.com/snap-stanford/csr to <DATA_ROOT>. 
+For KG, download preprocessed [Wiki](http://snap.stanford.edu/prodigy/Wiki.zip) and [FB15K-237](http://snap.stanford.edu/prodigy/FB15K-237.zip) datasets to <DATA_ROOT>. Download other KG datasets (NELL and ConceptNet) similarly following links in https://github.com/snap-stanford/csr. 
 
 
 
