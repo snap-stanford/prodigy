@@ -13,3 +13,5 @@ numpy
 lmdb
 ogb
 ray
+torch_scatter
+torch_sparse
